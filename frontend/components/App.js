@@ -193,7 +193,7 @@ export default function App() {
       });
   };
 
-
+console.log(articles)
   return (
     // ✨ fix the JSX: `Spinner`, `Message`, `LoginForm`, `ArticleForm` and `Articles` expect props ❗
     <>
@@ -228,7 +228,6 @@ export default function App() {
               />
             </PrivateRoute>
           } />
-          <Route path='articles/:id' element={<Articles deleteArticle={deleteArticle} />} />
         </Routes>
         <footer>Bloom Institute of Technology 2022</footer>
       </div>

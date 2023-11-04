@@ -11,13 +11,13 @@ export default function Articles({
 }) {
   const token = localStorage.getItem('token');
   if (!token) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/" />;
   }
 
   useEffect(() => {
     getArticles();
   }, []);
-
+console.log('articles here:', articles)
   return (
     <div className="articles">
       <h2>Articles</h2>
